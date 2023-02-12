@@ -1,6 +1,6 @@
 # NeuroFS
 
-This repository contains code for the paper, "Supervised Feature Selection with Neuron Evolution in Sparse Neural Networks" by Zahra Atashgahi, Xuhao Zhang, Neil Kichler, Shiwei Liu, Lu Yin, Mykola Pechenizkiy, Raymond Veldhuis, Decebal Constantin Mocanu.
+This repository contains code for the paper, "Supervised Feature Selection with Neuron Evolution in Sparse Neural Networks" by Zahra Atashgahi, Xuhao Zhang, Neil Kichler, Shiwei Liu, Lu Yin, Mykola Pechenizkiy, Raymond Veldhuis, Decebal Constantin Mocanu (https://openreview.net/forum?id=GcO6ugrLKp).
 
 ### Methodology
 ![algorithm](https://github.com/zahraatashgahi/NeuroFS/blob/main/NeuroFS.JPG?raw=true)
