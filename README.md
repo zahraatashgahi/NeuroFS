@@ -5,6 +5,12 @@ This repository contains code for the paper, "Supervised Feature Selection with 
 ### Methodology
 ![algorithm](https://github.com/zahraatashgahi/NeuroFS/blob/main/NeuroFS.JPG?raw=true)
 
+
+### Feature Selection on the MNIST dataset
+![MNIST](https://github.com/zahraatashgahi/NeuroFS/blob/main/mnist.JPG?raw=true)
+
+
+
 ### How to run
 ```
 K=50
