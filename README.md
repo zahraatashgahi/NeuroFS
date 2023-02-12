@@ -7,37 +7,17 @@ This repository contains code for the paper, "Supervised Feature Selection with 
 
 ### How to run
 ```
-for K in 25 50 75 100 150 200
-do
-	for seed in 0 1 2 3 4  
-	do  
-		for dataset in coil20 USPS isolet  har MNIST Fashion-MNIST BASEHOCK 
-		do
-			python3 ./code/main.py   --dataset_name $dataset \
-									 --model "NeuroFS" --K $K\
-									--batch_size 100 --lr 0.01 --epochs 100\
-									--zeta_in 0.2 --zeta_hid 0.3 --epsilon 30\
-									--num_hidden 1000 --seed $seed --wd 0.00001\
-									--gradient_addition --frac_epoch_remove 0.65 \
-									--activation "tanh" 
-									
-		done
-	
-	 
-		for dataset in  arcene Prostate_GE SMK GLA-BRA-180 
-		do
-			python3 ./code/main.py   --dataset_name $dataset \
-									 --model "NeuroFS" --K $K\
-									--batch_size 20 --lr 0.01 --epochs 100\
-									--zeta_in 0.2 --zeta_hid 0.3 --epsilon 30\
-									--num_hidden 1000 --seed $seed --wd 0.00001\
-									--gradient_addition --frac_epoch_remove 0.65 \
-									--activation "tanh" 
-									
-		done
+K=50
+seed=0 
+dataset=coil20 # USPS isolet  har MNIST Fashion-MNIST BASEHOCK (batch size = 100) arcene Prostate_GE SMK GLA-BRA-180 (batch size = 20) 
 
-done|
-
+python3 ./code/main.py   --dataset_name $dataset \
+		--model "NeuroFS" --K $K\
+		--batch_size 100 --lr 0.01 --epochs 100\
+		--zeta_in 0.2 --zeta_hid 0.3 --epsilon 30\
+		--num_hidden 1000 --seed $seed --wd 0.00001\
+		--gradient_addition --frac_epoch_remove 0.65 \
+		--activation "tanh" 
 ```
 
 
